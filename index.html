@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-size: 15px ;
+    }
+    .attribution { font-size: 11px; text-align: center;
+    transform: translate(-9px,114px); }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .yourresult {
+      background-color: hsl(256, 100%, 44%);
+      width: 250px;
+      height: 400px;
+      transform: translate(300px,100px);
+      border-radius: 20px 0 0 20px;
+    }
+    .yourresult h3 {
+      color: hsl(212, 45%, 89%);
+      transform: translate(85px,50px);
+    }
+    .yourresult h1 {
+      color: white;
+      transform: translate(102px,-56px);
+      font-size: 50px;
+    }
+    .yourresult .par {
+       color: hsl(220, 15%, 55%);
+       transform: translate(109px,-87px);
+    }
+    .yourresult .great {
+      color: white;
+      transform: translate(100px,-70px);
+    }
+    .yourresult p {
+      color: hsl(0, 0%, 92%);
+      transform: translate(36px,-70px);
+    }
+    .yourresult .text1 {
+      transform: translate(50px,-82px);
+    }
+    .yourresult .text2 {
+      transform: translate(95px,-95px);
+    }
+    .yourresult .summary {
+      height:400px ;
+      width: 400px;
+      background-color: hsl(0, 100%, 99%);
+      border-radius: 0 20px 20px 0;
+      transform: translate(250px,-435px);
+    }
+    .yourresult .summary h2 {
+      transform: translate(30px,20px);
+    }
+    /*red form*/
+    .yourresult .red {
+      height: 40px;
+      width: 250px;
+      background-color: rgba(255, 0, 0, 0.049);
+      transform: translate(310px,-782px);
+    }
+    .yourresult .red img {
+      transform: translate(20px,-22px);
+    }
+    .yourresult .red .rea {
+      transform: translate(50px,11px);
+      color: red;
+      font-size: 15px;
+    }
+    .yourresult .red h4 {
+      transform: translate(180px,-64px);
+    }
+    .yourresult .red .from {
+      color: grey;
+      transform: translate(200px,-100px);
+    }
+    /* yellow form*/
+    .yourresult .yellow {
+      height: 40px;
+      width: 250px;
+      background-color: rgba(251, 255, 0, 0.049);
+      transform: translate(310px,-782px);
+    }
+    .yourresult .yellow img {
+      transform: translate(20px,-22px);
+    }
+    .yourresult .yellow .mem {
+      transform: translate(50px,11px);
+      color: yellow;
+      font-size: 15px;
+    }
+    .yourresult .yellow h4 {
+      transform: translate(180px,-64px);
+    }
+    .yourresult .yellow .from {
+      color: grey;
+      transform: translate(200px,-100px);
+    }
+    /* green form*/
+    .yourresult .green {
+      height: 40px;
+      width: 250px;
+      background-color: rgba(0, 255, 4, 0.049);
+      transform: translate(310px,-782px);
+    }
+    .yourresult .green img {
+      transform: translate(20px,-22px);
+    }
+    .yourresult .green .ver {
+      transform: translate(50px,11px);
+      color: green;
+      font-size: 15px;
+    }
+    .yourresult .green h4 {
+      transform: translate(180px,-64px);
+    }
+    .yourresult .green .from {
+      color: grey;
+      transform: translate(200px,-100px);
+    }
+    /* purple form */
+    .yourresult .purple {
+      height: 40px;
+      width: 250px;
+      background-color: rgba(98, 0, 255, 0.049);
+      transform: translate(310px,-782px);
+    }
+    .yourresult .purple   img {
+      transform: translate(20px,-22px);
+    }
+    .yourresult .purple .vis {
+      transform: translate(50px,11px);
+      color: rgb(179, 0, 255);
+      font-size: 15px;
+    }
+    .yourresult .purple h4 {
+      transform: translate(180px,-64px);
+    }
+    .yourresult .purple .from {
+      color: grey;
+      transform: translate(200px,-100px);
+    }
+    button {
+      width: 200px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: hsl(218, 44%, 22%);
+      transform: translate(330px,-612px);
+      color: white;
+      transition: 300ms;
+    }
+    button:hover {
+      background-color: white;
+      color: hsl(218, 44%, 22%);
+      transition: 300ms;
+    }
+    .yourresult .all {
+      transform: translate(9px,105px);
+    }
+    .yourresult .alltext1 {
+      transform: translate(5px,118px);
+    }
+    .yourresult .alltext {
+      transform: translate(5px,110px);
+    }
+  </style>
+</head>
+<body>
+<main>
+ <div class="shape"></div> 
+<div class="yourresult">
+<h3>Your Result</h3>
+<div class="alltext">
+<h1>76</h1>
+<p class="par">of 100</p>
+</div>
+<div class="alltext1">
+<h2 class="great">Great</h1>
+<p class="text">You scored higher than 65% of</p>
+<p class="text1">the people who have taken</p>
+<p class="text2">these tests.</p>
+</div>
+<div class="all">
+<div class="summary">
+    <h2>Summary</h2>
+</div>
+<div class="red">
+  <h3 class="rea">Reaction</h3>
+  <img src="assets/images/icon-reaction.svg">
+  <h4>80</h4>
+  <h4 class="from">/100</h4>
+</div>
+<div class="yellow">
+  <h3 class="mem">Memory</h3>
+  <img src="assets/images/icon-memory.svg">
+  <h4>92</h4>
+  <h4 class="from">/100</h4>
+</div>
+<div class="green">
+  <h3 class="ver">Verbal</h3>
+  <img src="assets/images/icon-verbal.svg">
+  <h4>61</h4>
+  <h4 class="from">/100</h4>
+</div>
+<div class="purple">
+  <h3 class="vis">Visual</h3>
+  <img src="assets/images/icon-visual.svg">
+  <h4>72</h4>
+  <h4 class="from">/100</h4>
+</div>
+</div>
+<button>Continue</button>
+</div>
+</main>
+  
+</body>
+<footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/riddler5000">riddler5000</a>.
+</footer>
+</html>
